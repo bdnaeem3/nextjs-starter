@@ -1,0 +1,25 @@
+.title {
+  position: relative;
+
+  h1, h2 {
+    @extend .fs-24;
+    @extend .fw-900;
+    @extend .text-uppercase;
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 130px;
+    height: 10px;
+    background: #ec9e00;
+  }
+}
+
+.sub-title {
+  @extend .fs-17;
+  @extend .text-uppercase;
+  @extend .fw-900;
+}
